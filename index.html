@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming Florida</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor-encabezado">
+      <h1>Grooming Florida</h1>
+      <p class="subtitulo">Dale a tu mascota el servicio que se merece</p>
+    </div>
+  </header>
+  <nav class="ruta-navegacion sticky">
+    <ul>
+      <li><a href="#inicio">¿Qué ofrecemos?</a></li>
+      <li><a href="#informacion">¿Quiénes somos?</a></li>
+      <li><a href="#final">Beneficios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+<div class="nuevo-layout">
+  <div class="columna-texto" data-aos="fade-left">
+    <div class="caja">
+      <p class="subtitulo-grande">Asegura un servicio impecable para tu mejor amigo peludo.</p>
+    </div>
+    <div class="caja-lista">
+      <ul>
+        <li>Mejora la salud e higiene de tu mascota.</li>
+        <li>Servicio cómodo para tu billetera.</li>
+        <li>Atención rápida y eficiente.</li>
+      </ul>
+    </div>
+    <div class="boton-empezar animacion-pulso">
+      <a href="#">Quiero empezar ahora</a>
+    </div>
+  </div>
+  <div class="columna-imagen" data-aos="fade-right">
+    <img src="perro1.png" alt="Mascota feliz" />
+  </div>
+</div>
+  <div class="franja-curva">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#b30000" />
+    </svg>
+  </div>
+  <section id="informacion">
+    <div class="contenido-sobre-nosotros">
+      <div class="texto-descriptivo" data-aos="fade-right">
+        <h2 class="subtitulo-grande">Somos un grupo de profesionales a tu servicio</h2>
+        <h3 class="subtitulo-grande fondo-subtitulo">¿Por qué nosotros?</h3>
+        <p>Usamos herramientas de la mejor calidad, llegamos puntualmente y aplicamos técnicas actualizadas para un servicio excelente.</p>
+      </div>
+    </div>
+  </section>
+  <section id="final">
+    <div class="contenedor-beneficios">
+      <div class="beneficio card-beneficio" data-aos="zoom-in">
+        <div class="icono">🐾</div>
+        <h3>3 Meses</h3>
+        <p><strong>10% desc</strong><br>en cada servicio</p>
+      </div>
+      <div class="beneficio card-beneficio" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icono">🎉</div>
+        <h3>6 Meses</h3>
+        <p><strong>15% desc</strong><br>y un baño gratuito</p>
+      </div>
+      <div class="beneficio card-beneficio" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icono">🎁</div>
+        <h3>12 Meses</h3>
+        <p><strong>$20 desc</strong><br>un baño gratuito y kit de cuidado</p>
+      </div>
+    </div>
+    <div class="mensaje-final">
+      <p><strong>¡Recompensamos a nuestros clientes y sus mascotas para una experiencia divertida, amigable y eficaz!</strong></p>
+
+      </div>
+    </div>
+  </section>
+  
+  <section id="contacto">
+    <h2 class="subtitulo-grande fondo-subtitulo">Contacto</h2>
+
+    <form class="formulario-contacto" data-aos="fade-up">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">💬</a>
+  </section>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    // Contador animado
+    let contador = document.getElementById('contador');
+    let count = 0;
+    let objetivo = 250;
+    let intervalo = setInterval(() => {
+      if(count < objetivo) {
+        count++;
+        contador.textContent = count;
+      } else {
+        clearInterval(intervalo);
+      }
+    }, 15);
+  </script>
+</body>
+</html>
